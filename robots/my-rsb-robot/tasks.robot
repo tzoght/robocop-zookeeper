@@ -34,6 +34,7 @@ Fill and submit the form for one person
     Input Text    salesresult    ${sales_rep}[Sales]
     Select From List By Value    salestarget    ${sales_rep}[Sales Target]
     Click Button    Submit
+    Wait Until Page Contains Element    id:sales-form
 
 Fill the form using the data from the Excel file
     Open Workbook    SalesData.xlsx
